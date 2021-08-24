@@ -1,0 +1,26 @@
+
+{% comment %}theme-check-disable{% endcomment %}
+<div class="hero-image-section">
+<img src="{{ section.settings.image | img_url: 'master' }}">
+</div>
+
+{% schema %}
+    {
+        "name":"Hero Image",
+        "settings": [
+            {              
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"            
+            }
+        ],
+    
+        "presets": [
+            {
+                "name":" Hero Image",
+                "category": "image"
+            }
+        ]
+    }
+{% endschema %}
+{% comment %}theme-check-enable{% endcomment %}
